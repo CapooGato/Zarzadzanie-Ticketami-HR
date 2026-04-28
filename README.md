@@ -1,11 +1,11 @@
-### O projekcie
+### About
 
-System do zarządzania ticketami.
+System to manage HR tickets.
 
 ### Stack
 
-Frontedn: React 19  
-Backend: SpringBoot 4
-
+Frontend: React 19  
+Backend: SpringBoot 3.5.14
+DB: MySQL
  
  
