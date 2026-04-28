@@ -1,0 +1,462 @@
+/*STYLE EKRANU LOGOWANIA*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #a3a3a3;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background-color: #fff;
+  color: #000;
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.toggle-text {
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.toggle-button:hover {
+  color: #0056b3;
+}
+
+/*STYLE dla pracownika i admina*/
+.dashboard-container {
+  min-height: 100vh;
+  background-color: #f4f6f8;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar {
+  width: 100%;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #333;
+}
+
+.logout-btn {
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #f1f1f1;
+  border-color: #aaa;
+}
+
+.content-area {
+  flex-grow: 1;
+  padding: 40px 20px;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 5vh;
+}
+
+/*Pracownik*/
+.form-card {
+  background-color: #ffffff;
+  padding: 35px 40px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-card label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: -5px;
+}
+
+.form-card .input,
+.form-card .text-area {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.form-card .input:focus,
+.form-card .text-area:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.text-area {
+  height: 150px;
+  resize: vertical;
+}
+
+.create-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  align-self: flex-end;
+  transition: background-color 0.2s;
+  margin-top: 10px;
+}
+
+.create-btn:hover {
+  background-color: #0056b3;
+}
+
+.top-bar-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.nav-btn {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.date-col {
+  width: 160px;
+  text-align: right;
+}
+
+.date-cell {
+  text-align: right;
+  font-size: 13px;
+  color: #6c757d;
+}
+
+/*Panel Admina*/
+.admin-table-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.admin-table th {
+  background-color: #f8f9fa;
+  padding: 18px 20px;
+  border-bottom: 2px solid #e9ecef;
+  color: #495057;
+  font-weight: 600;
+}
+
+.admin-table td {
+  padding: 15px 20px;
+  border-bottom: 1px solid #e9ecef;
+  color: #333;
+  vertical-align: middle;
+}
+
+.admin-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.status-col {
+  text-align: right;
+  width: 180px;
+}
+
+.status-cell {
+  text-align: right;
+}
+
+.ticket-info {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  border: 1px solid #e9ecef;
+}
+
+.ticket-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.readonly-area {
+  background-color: #f1f3f5;
+  color: #495057;
+  cursor: default;
+}
+
+.readonly-area:focus {
+  border-color: #ccc !important;
+  outline: none;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+/*Wygląd statusów zgłoszeń*/
+.status-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.status-badge.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.in-progress {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.status-badge.closed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.rejected {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/*Kliknięcie na zgłoszenie przez pracownika*/
+.clickable-row {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.clickable-row:hover {
+  background-color: #f0f7ff;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-out;
+}
+
+.modal-card h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.modal-card hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.admin-comment-section label {
+  font-size: 13px;
+  font-weight: bold;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.comment-text {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 4px;
+  border-left: 4px solid #007bff;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-style: italic;
+  color: #444;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-card label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+  color: #555;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.modal-card .text-area,
+.modal-card .input,
+.modal-card select {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+  margin-bottom: 15px;
+}
+
+.modal-card select {
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.readonly-area {
+  background-color: #f8f9fa;
+  color: #495057;
+  cursor: not-allowed;
+  border: 1px solid #ccc;
+  resize: none;
+  height: 90px;
+}
+
+.readonly-area:focus {
+  outline: none;
+  border-color: #ccc !important;
+}
+
+.ticket-info {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  border: 1px solid #e9ecef;
+  text-align: left;
+}
+
+.ticket-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
