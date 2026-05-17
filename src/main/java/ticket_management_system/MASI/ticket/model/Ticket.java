@@ -1,4 +1,4 @@
-package ticket_management_system.MASI.ticket.model.entity;
+package ticket_management_system.MASI.ticket.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -18,22 +18,22 @@ public class Ticket {
     private Long id;
 
     @Column(nullable = false)
-    private LocalDateTime createdAt;
-
-    @Column(nullable = false)
-    @Enumerated(EnumType.STRING)
-    private Category category;
-
-    @Column(nullable = false)
     private String subject;
-
-    @Column(nullable = false)
-    @Enumerated(EnumType.STRING)
-    private Status status;
 
     @Column(nullable = false, length = 512)
     private String description;
 
     @Column(length = 512)
     private String hrComment;
+
+    @Column(nullable = false)
+    @Enumerated(EnumType.STRING)
+    private Category category;
+
+    @Column(nullable = false)
+    @Enumerated(EnumType.STRING)
+    private Status status;
+
+    @Column(nullable = false)
+    private LocalDateTime createdAt;
 }

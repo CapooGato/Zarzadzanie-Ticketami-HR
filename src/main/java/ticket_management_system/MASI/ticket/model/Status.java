@@ -1,4 +1,4 @@
-package ticket_management_system.MASI.ticket.model.entity;
+package ticket_management_system.MASI.ticket.model;
 
 public enum Status {
     OCZEKUJĄCE("Zgłoszenie oczekuje na przyjęcie."),
